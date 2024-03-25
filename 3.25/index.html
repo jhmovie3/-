@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- mplus1p font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- notosansjp font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <!-- roboto font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <!-- swiper -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header>
+        <a href="" class="h_logo">
+            <img src="./img/h_lg_logo.png" alt="logo">
+        </a>
+        <div class="h_menu_wrapper">
+            <div class="h_opening_hours">
+                <div class="h_clock">
+                    <div class="h_clock_img">
+                        <img src="./img/h_clock.png" alt="clock">
+                    </div>
+                    <div class="h_clock_info">
+                        <span class="h_day">24</span>
+                        <div class="h_vertical">
+                            <div>時</div>
+                            <div>間</div>
+                        </div>
+                    </div>
+                    <div class="h_closed">年中無休</div>
+                </div>
+
+                <div class="h_tel">
+                    <h3>お急ぎの方はまずはお電話ください！</h3>
+                    <div>
+                        <div class="h_tel_img">
+                            <svg viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.8508 8.12377V1.5H16.2139" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M16.2139 8.12377L22.8508 1.5" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M22.8504 17.9712V21.2831C22.8516 21.5906 22.7885 21.8949 22.6651 22.1766C22.5417 22.4583 22.3607 22.7112 22.1337 22.919C21.9067 23.1269 21.6387 23.2851 21.3469 23.3836C21.055 23.4821 20.7458 23.5187 20.439 23.491C17.0352 23.1219 13.7655 21.9611 10.8929 20.1019C8.22021 18.4069 5.95426 16.1455 4.25595 13.4781C2.38652 10.5981 1.22314 7.31909 0.860053 3.90675C0.83241 3.60146 0.868763 3.29378 0.966797 3.00329C1.06483 2.7128 1.2224 2.44586 1.42946 2.21947C1.63653 1.99308 1.88856 1.81221 2.16951 1.68836C2.45046 1.56451 2.75416 1.5004 3.0613 1.50011H6.37976C6.91658 1.49483 7.43701 1.68456 7.84405 2.03391C8.25108 2.38326 8.51694 2.86841 8.59207 3.39892C8.73213 4.4588 8.99189 5.49946 9.36638 6.50106C9.5152 6.89619 9.54741 7.32562 9.45919 7.73847C9.37097 8.15131 9.16601 8.53026 8.86861 8.83042L7.46379 10.2324C9.03846 12.9963 11.3314 15.2847 14.1007 16.8562L15.5055 15.4542C15.8063 15.1574 16.186 14.9528 16.5996 14.8648C17.0133 14.7767 17.4436 14.8089 17.8395 14.9574C18.8431 15.3312 19.8858 15.5904 20.9478 15.7302C21.4851 15.8058 21.9759 16.076 22.3267 16.4892C22.6775 16.9024 22.8639 17.4298 22.8504 17.9712Z"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h3>090-0000-0000</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="h_nav_menu">
+                <div class="h_map">
+                    <div class="h_map_img">
+                        <svg viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22.6742 22.4642C26.2922 16.787 25.8374 17.4953 25.9416 17.3472C27.2589 15.4893 27.9551 13.3026 27.9551 11.0234C27.9551 4.97914 23.0502 0 16.998 0C10.9656 0 6.04102 4.96931 6.04102 11.0234C6.04102 13.3012 6.75183 15.5451 8.11223 17.4281L11.3218 22.4643C7.89023 22.9916 2.05664 24.5631 2.05664 28.0234C2.05664 29.2848 2.87995 31.0824 6.80216 32.4832C9.54089 33.4613 13.1618 34 16.998 34C24.1716 34 31.9395 31.9765 31.9395 28.0234C31.9395 24.5625 26.1127 22.9927 22.6742 22.4642ZM9.7763 16.3323C9.76534 16.3152 9.75392 16.2984 9.74197 16.2819C8.60994 14.7246 8.0332 12.8789 8.0332 11.0234C8.0332 6.04177 12.0445 1.99219 16.998 1.99219C21.9413 1.99219 25.9629 6.04357 25.9629 11.0234C25.9629 12.8819 25.397 14.665 24.3262 16.1813C24.2303 16.3078 24.7309 15.5301 16.998 27.6641L9.7763 16.3323ZM16.998 32.0078C9.16251 32.0078 4.04883 29.7046 4.04883 28.0234C4.04883 26.8935 6.67639 25.0355 12.4989 24.3113L16.158 30.0529C16.3409 30.34 16.6576 30.5137 16.998 30.5137C17.3383 30.5137 17.6551 30.3399 17.838 30.0529L21.497 24.3113C27.3196 25.0355 29.9473 26.8935 29.9473 28.0234C29.9473 29.6904 24.8796 32.0078 16.998 32.0078Z"
+                                fill="#466C8A" />
+                            <path
+                                d="M17 6.04395C14.2538 6.04395 12.0195 8.27818 12.0195 11.0244C12.0195 13.7706 14.2538 16.0049 17 16.0049C19.7462 16.0049 21.9805 13.7706 21.9805 11.0244C21.9805 8.27818 19.7462 6.04395 17 6.04395ZM17 14.0127C15.3523 14.0127 14.0117 12.6722 14.0117 11.0244C14.0117 9.37668 15.3523 8.03613 17 8.03613C18.6477 8.03613 19.9883 9.37668 19.9883 11.0244C19.9883 12.6722 18.6477 14.0127 17 14.0127Z"
+                                fill="#466C8A" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="h_menu_tel">
+                    <div class="h_menu_tel_img">
+                        <svg viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M32.999 24.9581V29.7754C33.0008 30.2226 32.909 30.6653 32.7295 31.0751C32.55 31.4848 32.2867 31.8526 31.9565 32.155C31.6263 32.4573 31.2365 32.6875 30.812 32.8307C30.3876 32.974 29.9378 33.0272 29.4915 32.987C24.5405 32.4501 19.7847 30.7616 15.6062 28.0573C11.7187 25.5919 8.42282 22.3025 5.95254 18.4227C3.23338 14.2336 1.54119 9.46413 1.01306 4.50072C0.972852 4.05667 1.02573 3.60914 1.16832 3.1866C1.31092 2.76407 1.5401 2.3758 1.84129 2.04651C2.14248 1.71721 2.50907 1.45412 2.91772 1.27397C3.32637 1.09383 3.76813 1.00058 4.21487 1.00016H9.04173C9.82256 0.992486 10.5795 1.26844 11.1716 1.77659C11.7636 2.28475 12.1503 2.99041 12.2596 3.76207C12.4634 5.30371 12.8412 6.8174 13.3859 8.27426C13.6024 8.84901 13.6492 9.47363 13.5209 10.0741C13.3926 10.6746 13.0945 11.2258 12.6619 11.6624L10.6185 13.7017C12.9089 17.7218 16.2441 21.0504 20.2722 23.3363L22.3156 21.297C22.753 20.8653 23.3053 20.5677 23.907 20.4397C24.5087 20.3116 25.1346 20.3584 25.7105 20.5744C27.1702 21.118 28.6869 21.4951 30.2316 21.6984C31.0132 21.8085 31.727 22.2014 32.2372 22.8024C32.7475 23.4034 33.0186 24.1706 32.999 24.9581Z"
+                                stroke="#466C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div id="h_navArea">
+                    <nav class="h_ham">
+                        <div class="h_inner">
+                            <ul>
+                                <li>
+                                    <a href="" class="h_nav_btn">
+                                        <div class="h_about_img">
+                                            <img src="./img/h_aboutus.png" alt="">
+                                        </div>
+                                        <div class="h_nav_text">
+                                            <h4>当院について</h4>
+                                            <h5>ABOUT US</h5>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="h_nav_btn">
+                                        <div class="h_guide_img">
+                                            <img src="./img/h_guide.png" alt="">
+                                        </div>
+                                        <div class="h_nav_text">
+                                            <h4>診療案内</h4>
+                                            <h5>GUIDE</h5>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="h_nav_btn">
+                                        <div class="h_recruit_img">
+                                            <img src="./img/h_recruit.png" alt="">
+                                        </div>
+                                        <div class="h_nav_text">
+                                            <h4>採用情報</h4>
+                                            <h5>RECRUIT</h5>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="h_nav_btn">
+                                        <div class="h_contact_img">
+                                            <img src="./img/h_contact.png" alt="">
+                                        </div>
+                                        <div class="h_nav_text">
+                                            <h4>お問い合わせ</h4>
+                                            <h5>CONTACT</h5>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="h_nav_btn">
+                                        <div class="h_news_img">
+                                            <img src="./img/h_news.png" alt="">
+                                        </div>
+                                        <div class="h_nav_text">
+                                            <h4>お知らせ</h4>
+                                            <h5>NEWS</h5>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="h_nav_btn">
+                                        <div class="h_cooperation_img">
+                                            <img src="./img/h_cooperation.png" alt="">
+                                        </div>
+                                        <div class="h_nav_text">
+                                            <h4>協力動物病院</h4>
+                                            <h5>COOPERATION</h5>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="h_nav_btn">
+                                        <div class="h_dictionary_img">
+                                            <img src="./img/h_dictionary.png" alt="">
+                                        </div>
+                                        <div class="h_nav_text">
+                                            <h4>用語集</h4>
+                                            <h5>DICTIONARY</h5>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="h_nav_btn">
+                                        <div class="h_column_img">
+                                            <img src="./img/h_column.png" alt="">
+                                        </div>
+                                        <div class="h_nav_text">
+                                            <h4>コラム</h4>
+                                            <h5>COLUMN</h5>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="h_toggle-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <section class="t_section1">
+        <div class="t_hero_section">
+            <div class="t_hero_content">
+                <div class="t_hero_circle_text">
+                    <img src="./img/t_hero_circle_text.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="h_opening_hours t_view">
+            <div class="h_clock t_clock">
+                <div class="h_clock_img">
+                    <img src="./img/h_clock.png" alt="clock">
+                </div>
+                <div class="h_clock_info">
+                    <span class="h_day">24</span>
+                    <div class="h_vertical">
+                        <div>時</div>
+                        <div>間</div>
+                    </div>
+                </div>
+                <div class="h_closed t_closed">年中<br>無休</div>
+            </div>
+
+            <div class="h_tel">
+                <h3>お急ぎの方はまずはお電話ください！</h3>
+                <div>
+                    <div class="h_tel_img">
+                        <svg viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.8508 8.12377V1.5H16.2139" stroke="white" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16.2139 8.12377L22.8508 1.5" stroke="white" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M22.8504 17.9712V21.2831C22.8516 21.5906 22.7885 21.8949 22.6651 22.1766C22.5417 22.4583 22.3607 22.7112 22.1337 22.919C21.9067 23.1269 21.6387 23.2851 21.3469 23.3836C21.055 23.4821 20.7458 23.5187 20.439 23.491C17.0352 23.1219 13.7655 21.9611 10.8929 20.1019C8.22021 18.4069 5.95426 16.1455 4.25595 13.4781C2.38652 10.5981 1.22314 7.31909 0.860053 3.90675C0.83241 3.60146 0.868763 3.29378 0.966797 3.00329C1.06483 2.7128 1.2224 2.44586 1.42946 2.21947C1.63653 1.99308 1.88856 1.81221 2.16951 1.68836C2.45046 1.56451 2.75416 1.5004 3.0613 1.50011H6.37976C6.91658 1.49483 7.43701 1.68456 7.84405 2.03391C8.25108 2.38326 8.51694 2.86841 8.59207 3.39892C8.73213 4.4588 8.99189 5.49946 9.36638 6.50106C9.5152 6.89619 9.54741 7.32562 9.45919 7.73847C9.37097 8.15131 9.16601 8.53026 8.86861 8.83042L7.46379 10.2324C9.03846 12.9963 11.3314 15.2847 14.1007 16.8562L15.5055 15.4542C15.8063 15.1574 16.186 14.9528 16.5996 14.8648C17.0133 14.7767 17.4436 14.8089 17.8395 14.9574C18.8431 15.3312 19.8858 15.5904 20.9478 15.7302C21.4851 15.8058 21.9759 16.076 22.3267 16.4892C22.6775 16.9024 22.8639 17.4298 22.8504 17.9712Z"
+                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3>090-0000-0000</h3>
+                </div>
+            </div>
+        </div>
+        <table class="t_recent_news_table">
+            <tbody>
+                <tr>
+                    <td>NEWS</td>
+                    <td class="t_recent_news_content">
+                        <span class="t_recent_new_mark">NEW</span>
+                        <span class="t_recent_news_date">2024.03.21</span>
+                        サイトを開設いたしました
+                    </td>
+                    <td class="t_recent_news_table_view"><span class="t_recent_news_table_arrow"><img
+                                src="./img/t_recent_news_table_arrow.png" alt=""></span><a>一覧を見る</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="t_section_guide">
+        <div class="t_guide_heading">
+            <h1 class="template_lg_heading_en">GUIDE</h1>
+            <p class="template_lg_heading_jp">診療案内</p>
+        </div>
+        <table class="template_table_animal">
+            <tbody>
+                <tr class="template_table_animal_heading">
+                    <td colspan="4">
+                        <h1 class="template_sm_heading_jp">対象動物</h1>
+                        <p class="template_sm_heading_en">ANIMAL</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div><img src="./img/template_table_animal_dog.png" alt=""></div>犬
+                    </td>
+                    <td>
+                        <div><img src="./img/template_table_animal_cat.png" alt=""></div>猫
+                    </td>
+                    <td>
+                        <div><img src="./img/template_table_animal_rabbit.png" alt=""></div>ウサギ
+                    </td>
+                    <td>
+                        <div><img src="./img/template_table_animal_guineapig.png" alt=""></div>ハムスター
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div><img src="./img/template_table_animal_hamster.png" alt=""></div>モルモット
+                    </td>
+                    <td>
+                        <div><img src="./img/template_table_animal_chinhamster.png" alt=""></div>チンチラ
+                    </td>
+                    <td>
+                        <div><img src="./img/template_table_animal_squirrel.png" alt=""></div>リス
+                    </td>
+                    <td>
+                        <div><img src="./img/template_table_animal_guineapig.png" alt=""></div>デグー
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div><img src="./img/template_table_animal_fre.png" alt=""></div>プレーリードッグ
+                    </td>
+                    <td>
+                        <div><img src="./img/template_table_animal_ferret.png" alt=""></div>フェレット
+                    </td>
+                    <td>
+                        <div><img src="./img/template_table_animal_hedgehog.png" alt=""></div>ハリネズミ
+                    </td>
+                    <td>
+                        <div><img src="./img/template_table_animal_squirrel2.png" alt=""></div>フクロモモンガ
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div><img src="./img/template_table_animal_mia.png" alt=""></div>ミーアキャット
+                    </td>
+                    <td>
+                        <div><img src="./img/template_table_animal_fennec.png" alt=""></div>フェネック
+                    </td>
+                    <td>
+                        <div><img src="./img/template_table_animal_inko.png" alt=""></div>インコ
+                    </td>
+                    <td>
+                        <div><img src="./img/template_table_animal_parrot.png" alt=""></div>オウム
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div><img src="./img/template_table_animal_sparrow.png" alt=""></div>フィンチ類
+                        (文鳥、キンカチョウなど)
+                    </td>
+                    <td>
+                        <div><img src="./img/template_table_animal_duck.png" alt=""></div>家禽類
+                        (ニワトリ、アヒルなど)
+                    </td>
+                    <td>
+                        <div><img src="./img/template_table_animal_turtle.png" alt=""></div>カメ
+                    </td>
+                    <td>
+                        <div><img src="./img/template_table_animal_exoticpet.png" alt=""></div>ヤモリ
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div><img src="./img/template_table_animal_lizard.png" alt=""></div>トカゲ
+                    </td>
+                    <td>
+                        <div><img src="./img/template_table_animal_snake.png" alt=""></div>ヘビ
+                    </td>
+                    <td>
+                        <div><img src="./img/template_table_animal_frog.png" alt=""></div>カエル
+                    </td>
+                    <td>
+                        <div><img src="./img/template_table_animal_axolotl.png" alt=""></div>ウーパールーパー
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div><img src="./img/template_table_animal_newt.png" alt=""></div>イモリ
+                    </td>
+                    <td>
+                        <div><img src="./img/template_table_animal_pig.png" alt=""></div>マイクロブタ
+                    </td>
+
+                </tr>
+                <td class="template_table_animal_caution" colspan="4">【動物が見当たらない場合】<br>
+                    ※こちらに記載されていない動物につきましてはお電話にてご確認・ご相談をお願いいたします<tr>
+                </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="template_bring">
+            <div class="template_bring_heading">
+                <h1 class="template_sm_heading_jp">持ち物</h1>
+                <p class="template_sm_heading_en">BRING</p>
+            </div>
+            <div class="template_bring_cards">
+                <div class="template_bring_card">
+                    <p class="template_bring_numbering">01</p>
+                    <div class="template_bring_card_content">
+                        <div class="template_bring_card_img">
+                            <img src="./img/template_bring_card1.png" alt="">
+                        </div>
+                        <p class="template_bring_card_content_detail">
+                            クレジットカードもしく<br>は現金（必須）
+                        </p>
+                    </div>
+                </div>
+                <div class="template_bring_card">
+                    <p class="template_bring_numbering">02</p>
+                    <div class="template_bring_card_content">
+                        <div class="template_bring_card_img">
+                            <img src="./img/template_bring_card2.png" alt="">
+                        </div>
+                        <p class="template_bring_card_content_detail">
+                            飼い主様の身分証明書（必須）
+                        </p>
+                    </div>
+                </div>
+                <div class="template_bring_card">
+                    <p class="template_bring_numbering">03</p>
+                    <div class="template_bring_card_content">
+                        <div class="template_bring_card_img">
+                            <img src="./img/template_bring_card3.png" alt="">
+                        </div>
+                        <p class="template_bring_card_content_detail">
+                            ペットの書類
+                            （ペットの保険証/かかりつけ医での検査結果/お薬etc...）（任意）
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="template_flowAndfee">
+            <div class="template_flow_card">
+                <div class="template_flow_heading">
+                    <h1 class="template_sm_heading_jp">診察の流れ</h1>
+                    <p class="template_sm_heading_en">FLOW</p>
+                </div>
+                <div class="template_flow_card_content">
+                    <div class="template_flow_card_content_image">
+                        <img src="./img/template_flow_1.png" alt="">
+                    </div>
+                    <p class="template_flow_card_content_detail">
+                        まずは診療の可否について<br class="space">お電話ください。
+                    </p>
+                </div>
+                <div class="template_flow_arrow"><img src="./img/template_dot_arrow.png" alt=""></div>
+                <div class="template_flow_card_content">
+                    <div class="template_flow_card_content_image">
+                        <img src="./img/template_flow2.png" alt="">
+                    </div>
+                    <p class="template_flow_card_content_detail">
+                        ご来院
+                    </p>
+                </div>
+                <div class="template_flow_arrow"><img src="./img/template_dot_arrow.png" alt=""></div>
+
+                <div class="template_flow_card_content">
+                    <div class="template_flow_card_content_image">
+                        <img src="./img/template_flow3.png" alt="">
+                    </div>
+                    <p class="template_flow_card_content_detail">
+                        問診票記入
+                    </p>
+                </div>
+                <div class="template_flow_arrow"><img src="./img/template_dot_arrow.png" alt=""></div>
+
+                <div class="template_flow_card_content">
+                    <div class="template_flow_card_content_image">
+                        <img src="./img/template_flow4.png" alt="">
+                    </div>
+                    <p class="template_flow_card_content_detail">
+                        診察
+                    </p>
+                </div>
+                <div class="template_flow_arrow"><img src="./img/template_dot_arrow.png" alt=""></div>
+
+                <div class="template_flow_card_content">
+                    <div class="template_flow_card_content_image">
+                        <img src="./img/template_flow5.png" alt="">
+                    </div>
+                    <p class="template_flow_card_content_detail">
+                        お会計
+                    </p>
+                </div>
+            </div>
+            <div class="template_fee_card">
+                <div class="template_fee_card_content">
+                    <div class="template_fee_heading">
+                        <h1 class="template_sm_heading_jp">診療費</h1>
+                        <p class="template_sm_heading_en">medical consultation fee</p>
+                        <p class="template_fee_price">
+                            <span>救急診察料</span><span>15,000円(税抜）</span><span>治療料金</span><span>※税抜き価格</span>
+                        </p>
+                    </div>
+                    <table class="template_fee_table">
+                        <tbody>
+                            <tr>
+                                <th>症状</th>
+                                <th>治療費</th>
+                            </tr>
+                            <tr>
+                                <td>症状</td>
+                                <td>10,000円〜</td>
+                            </tr>
+                            <tr>
+                                <td>症状</td>
+                                <td>10,000円〜</td>
+                            </tr>
+                            <tr>
+                                <td>症状</td>
+                                <td>10,000円〜</td>
+                            </tr>
+                            <tr>
+                                <td>症状</td>
+                                <td>10,000円〜</td>
+                            </tr>
+                            <tr>
+                                <td>症状</td>
+                                <td>10,000円〜</td>
+                            </tr>
+                            <tr>
+                                <td>症状</td>
+                                <td>10,000円〜</td>
+                            </tr>
+                            <tr>
+                                <td>症状</td>
+                                <td>10,000円〜</td>
+                            </tr>
+                            <tr>
+                                <td>症状</td>
+                                <td>10,000円〜</td>
+                            </tr>
+                            <tr>
+                                <td>症状</td>
+                                <td>10,000円〜</td>
+                            </tr>
+                            <tr>
+                                <td>症状</td>
+                                <td>10,000円〜</td>
+                            </tr>
+                            <tr>
+                                <td>症状</td>
+                                <td>10,000円〜</td>
+                            </tr>
+                            <tr>
+                                <td>症状</td>
+                                <td>10,000円〜</td>
+                            </tr>
+                            <tr>
+                                <td>症状</td>
+                                <td>10,000円〜</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="t_access">
+        <div class="t_access_heading">
+            <h1 class="template_lg_heading_en">ACCESS</h1>
+            <p class="template_lg_heading_jp">病院概要</p>
+        </div>
+        <div class="t_access_contact">
+            <div class="t_access_contact_col1">
+                <h1 class="t_access_contact_heading">港区動物救急医療センター
+                    <br>芝アニマルクリニック
+                </h1>
+                <div class="t_access_detail">
+                    <span class="t_access_detail_block">住所</span>
+                    <span>東京都港区芝公園2-2-11 グランデイ芝公園 1階</span>
+                </div>
+                <div class="t_access_detail">
+                    <span class="t_access_detail_block">電話番号</span>
+                    <span>03−1234−5678</span>
+                </div>
+                <div class="t_access_detail">
+                    <span class="t_access_detail_block">営業時間</span>
+                    <span>24時間年中無休</span>
+                </div>
+                <div class="t_access_detail">
+                    <span class="t_access_detail_block">電車の場合</span>
+                    <span>都営三田線芝公園駅から徒歩3分
+                        <br>都営大江戸線大門駅から徒歩4分
+                        <br>JR山手線浜松町駅から徒歩8分</span>
+                </div>
+            </div>
+            <div class="t_access_contact_col2">
+                <div class="t_access_contact_map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.8452141407743!2d139.74869717529708!3d35.656185031350304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b80e800f1a3%3A0xdfab8aa460e6d35e!2z5riv5Yy65YuV54mp5pWR5oCl5Yy755mC44K744Oz44K_44O8IOiKneOCouODi-ODnuODq-OCr-ODquODi-ODg-OCrw!5e0!3m2!1sja!2sjp!4v1711087829474!5m2!1sja!2sjp"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <a href="https://maps.app.goo.gl/SBoda5oWDAKBxNDp8" class="t_access_contact_map_link"><span
+                        class="t_map_arrow"><img src="./img/t_map_arrow.png" alt=""></span>Google mapで見る</a>
+            </div>
+        </div>
+        <!-- swiper -->
+        <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./img/t_access_slide1.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/t_access_slide2.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/t_access_slide3.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/t_access_slide4.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/t_access_slide5.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="t_link_card_wrapper">
+            <div class="t_link_card">
+                <div class="t_link_card_content">
+                    <div class="t_link_card_heading">
+                        <h1 class="card_heading_en">RECRUIT</h1>
+                        <p class="card_paragraph_jp">採用情報はこちら</p>
+                    </div>
+                    <div class="t_link_card_img">
+                        <img src="./img/t_link_card_img1.png" alt="">
+                    </div>
+                    <div class="t_link_card_arrow"><img src="./img/t_link_card_arrow.png" alt=""></div>
+                </div>
+            </div>
+            <div class="t_link_card">
+                <div class="t_link_card_content">
+                    <div class="t_link_card_heading">
+                        <h1 class="card_heading_en">STAFF</h1>
+                        <p class="card_paragraph_jp">スタッフ情報はこちら</p>
+                    </div>
+                    <div class="t_link_card_img">
+                        <img src="./img/t_link_card_img2.png" alt="">
+                    </div>
+                    <div class="t_link_card_arrow"><img src="./img/t_link_card_arrow.png" alt=""></div>
+                </div>
+            </div>
+            <div class="t_link_card">
+                <div class="t_link_card_content">
+                    <div class="t_link_card_heading">
+                        <h1 class="card_heading_en">HOSPITAL</h1>
+                        <p class="card_paragraph_jp">協力病院一覧・用語集はこちら</p>
+                    </div>
+                    <div class="t_link_card_img">
+                        <img src="./img/t_link_card_img3.png" alt="">
+                    </div>
+                    <div class="t_link_card_arrow"><img src="./img/t_link_card_arrow.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+<div class="t_news_table_wrapper">
+            <div class="t_news_table">
+                <div class="t_news_table_content">
+                    <div class="t_news_table_content_heading">
+                        <h1 class="template_lg_heading_en">NEWS</h1>
+                        <p class="template_lg_heading_jp">お知らせ</p>
+                    </div>
+                    <div class="t_news_table_content_detail">
+                        <p class="t_news_table_content_detail_p">
+                            <span class="t_news_table_date">2023.10.01</span>
+                            <span class="t_news_table_title">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</span>
+                        </p>
+                    </div>
+                    <div class="t_news_table_content_detail">
+                        <p class="t_news_table_content_detail_p">
+                            <span class="t_news_table_date">2023.10.01</span>
+                            <span class="t_news_table_title">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</span>
+                        </p>
+                    </div>
+                    <div class="t_news_table_content_detail">
+                        <p class="t_news_table_content_detail_p">
+                            <span class="t_news_table_date">2023.10.01</span>
+                            <span class="t_news_table_title">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</span>
+                        </p>
+                    </div>
+                    <a href="" class="t_news_table_content_button">
+                        <div class="t_news_table_content_button_text">
+                            <span>一覧を見る</span>
+                            <span>
+                                <svg viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="mask0_547_930" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="17">
+                                <rect y="0.740234" width="16" height="16" fill="#D9D9D9"/>
+                                </mask>
+                                <g mask="url(#mask0_547_930)">
+                                <path d="M8.19441 7.05444C4.65565 7.07866 4.75972 9.68445 3.64391 10.612C2.52809 11.5395 2.30161 16.2944 7.47238 15.1092L9.02599 15.0985C14.2125 16.2132 13.9214 11.4618 12.7929 10.5495C11.6645 9.63712 11.7333 7.02997 8.19424 7.05411L8.19441 7.05444Z" fill="white"/>
+                                <path d="M4.08044 6.40043C4.47263 7.55095 4.04065 8.73942 3.11551 9.05462C2.19062 9.3699 1.12274 8.69276 0.730629 7.54199C0.338432 6.39147 0.867976 5.48895 1.79287 5.17367C2.71776 4.85839 3.68807 5.24958 4.08019 6.40035L4.08044 6.40043Z" fill="white"/>
+                                <path d="M7.71208 3.44187C8.14642 4.71635 7.6868 6.0259 6.68576 6.36716C5.68472 6.70841 4.52093 5.95192 4.08684 4.67752C3.6525 3.40304 4.22009 2.41018 5.22105 2.06917C6.22208 1.72792 7.27791 2.16772 7.71225 3.4422L7.71208 3.44187Z" fill="white"/>
+                                <path d="M12.2973 6.34544C11.921 7.50125 12.3691 8.68355 13.2982 8.98615C14.2275 9.28882 15.2857 8.59719 15.6623 7.4412C16.0386 6.28539 15.4971 5.39025 14.568 5.08766C13.6387 4.78498 12.6739 5.18945 12.2974 6.34519L12.2973 6.34544Z" fill="white"/>
+                                <path d="M8.6266 3.43589C8.20973 4.71603 8.68685 6.01938 9.69264 6.34673C10.6983 6.67433 11.8516 5.90212 12.2685 4.62199C12.6853 3.34186 12.1044 2.35679 11.0987 2.02919C10.093 1.70159 9.04347 2.15576 8.6266 3.43589Z" fill="white"/>
+                                </g>
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+</div>
+
+    </section>
+
+    <aside>
+        <a class="s_scrollbar" href="#">
+            <span>SCROLL</span>
+            <div class="s_scrollbar_arrow">
+                <img src="./img/s_scrollbar_arrow.png" alt="">
+            </div>
+        </a>
+        <div class="s_sidebar">
+            <a href="" class="s_img">
+                <img src="./img/sidebar.png" alt="">
+                <svg viewBox="0 0 345 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect rx="2" fill="#06C755" />
+                    <path
+                        d="M76.6289 34.248C76.4849 34.248 76.4049 34.168 76.4049 34.024V28.392C76.4049 28.248 76.4849 28.168 76.6289 28.168H82.3889C82.5329 28.168 82.6129 28.248 82.6129 28.392V39.816C82.6129 41.608 82.1169 42.376 79.5569 42.344C79.4289 42.344 79.3489 42.28 79.3009 42.152L78.9969 41.24C78.9809 41.24 78.9489 41.256 78.9169 41.256H72.9329C72.7889 41.256 72.7089 41.176 72.7089 41.032V35.24C72.7089 35.096 72.7889 35.016 72.9329 35.016H78.9169C79.0609 35.016 79.1409 35.096 79.1409 35.24V40.424C80.4849 40.44 80.6289 40.216 80.6289 39.592V34.248H76.6289ZM71.3009 42.136C71.3009 42.28 71.2209 42.36 71.0769 42.36H69.5409C69.3969 42.36 69.3169 42.28 69.3169 42.136V28.392C69.3169 28.248 69.3969 28.168 69.5409 28.168H75.2529C75.3969 28.168 75.4769 28.248 75.4769 28.392V34.024C75.4769 34.168 75.3969 34.248 75.2529 34.248H71.3009V42.136ZM80.6609 30.632V29.688H78.1969V30.632H80.6609ZM73.7009 30.632V29.688H71.2689V30.632H73.7009ZM80.6609 32.84V31.848H78.1969V32.84H80.6609ZM73.7009 32.84V31.848H71.2689V32.84H73.7009ZM77.3969 37.448V36.52H74.4529V37.448H77.3969ZM77.3969 39.736V38.728H74.4529V39.736H77.3969Z"
+                        fill="white" />
+                    <path
+                        d="M57.8129 37.2552C57.6689 37.2552 57.5889 37.1752 57.5889 37.0312V35.6392C57.5889 35.4952 57.6689 35.4152 57.8129 35.4152H63.0289V34.1672H57.7009C57.5569 34.1672 57.4769 34.0872 57.4769 33.9432V32.5832C57.4769 32.4392 57.5569 32.3592 57.7009 32.3592H60.8369V30.9672H58.1169C57.9729 30.9672 57.8929 30.8872 57.8929 30.7432V29.3992C57.8929 29.2552 57.9729 29.1752 58.1169 29.1752H60.8369V28.0072C60.8369 27.8632 60.9169 27.7832 61.0609 27.7832H62.6769C62.8209 27.7832 62.9009 27.8632 62.9009 28.0072V29.1752H65.7489C65.8929 29.1752 65.9729 29.2552 65.9729 29.3992V30.7432C65.9729 30.8872 65.8929 30.9672 65.7489 30.9672H62.9009V32.3592H66.2609C66.4049 32.3592 66.4849 32.4392 66.4849 32.5832V33.9432C66.4849 34.0872 66.4049 34.1672 66.2609 34.1672H65.0449V35.4152H66.1969C66.3409 35.4152 66.4209 35.4952 66.4209 35.6392V37.0312C66.4209 37.1752 66.3409 37.2552 66.1969 37.2552H65.0449V39.9272C65.0449 41.6872 64.4369 42.4232 61.7169 42.3752C61.5889 42.3752 61.4929 42.2952 61.4449 42.1832L60.8689 40.7272C60.8529 40.6952 60.8529 40.6632 60.8529 40.6312C60.8529 40.5352 60.9329 40.4712 61.0769 40.4712C62.7889 40.5352 63.0289 40.2792 63.0289 39.6552V37.2552H57.8129ZM52.2769 28.7752C52.2769 28.6312 52.3569 28.5512 52.5009 28.5512H56.9009C57.0449 28.5512 57.1249 28.6312 57.1249 28.7752V40.8392C57.1249 40.9832 57.0449 41.0632 56.9009 41.0632H52.5009C52.3569 41.0632 52.2769 40.9832 52.2769 40.8392V28.7752ZM55.3969 33.7832V30.4232H54.0209V33.7832H55.3969ZM55.3969 39.1912V35.5592H54.0209V39.1912H55.3969ZM59.9729 40.6792C59.5889 39.8952 58.9809 38.9992 58.3729 38.3912C58.3249 38.3432 58.2929 38.2952 58.2929 38.2472C58.2929 38.1832 58.3409 38.1352 58.4209 38.0872L59.7169 37.3672C59.7649 37.3352 59.7969 37.3352 59.8449 37.3352C59.9089 37.3352 59.9569 37.3512 60.0209 37.4152C60.6449 38.0232 61.3169 38.8712 61.7169 39.6552C61.7329 39.7032 61.7489 39.7352 61.7489 39.7672C61.7489 39.8472 61.7009 39.9112 61.6209 39.9592L60.2769 40.7752C60.2289 40.8072 60.1809 40.8232 60.1489 40.8232C60.0689 40.8232 60.0209 40.7752 59.9729 40.6792Z"
+                        fill="white" />
+                    <path
+                        d="M43.1927 42.0624C43.0007 42.0624 42.8567 41.9424 42.8567 41.7264V38.3664H33.8087C33.6167 38.3664 33.4727 38.2464 33.4727 38.0304V37.1664C33.4727 37.0224 33.4967 36.8784 33.6167 36.7584L43.6727 23.1984C43.7687 23.0544 43.8887 22.9824 44.0807 22.9824H46.0247C46.2407 22.9824 46.3607 23.1024 46.3607 23.3184V35.0784H48.8327C49.0487 35.0784 49.1687 35.1984 49.1687 35.4144V38.0304C49.1687 38.2464 49.0487 38.3664 48.8327 38.3664H46.3607V41.7264C46.3607 41.9424 46.2407 42.0624 46.0247 42.0624H43.1927ZM38.5127 35.0784H42.8567V29.0544L38.5127 35.0784Z"
+                        fill="white" />
+                    <path
+                        d="M18.6818 42.063C18.4658 42.063 18.3458 41.943 18.3458 41.727V40.863C18.3458 40.719 18.3938 40.575 18.4898 40.455L23.1938 35.151C26.5298 31.407 27.3218 30.111 27.3218 28.407C27.3218 26.967 26.2418 26.055 24.5378 26.055C23.0738 26.055 21.9218 26.919 21.3218 28.551C21.2498 28.767 21.1298 28.839 20.9138 28.791L18.2498 28.047C18.0578 27.999 17.9378 27.879 18.0338 27.639C19.0178 24.519 21.4658 22.623 24.7298 22.623C28.4498 22.623 30.9698 24.807 30.9698 28.047C30.9698 30.615 30.0338 32.607 25.7378 37.143L24.2258 38.751H31.2098C31.4018 38.751 31.5458 38.895 31.5458 39.111V41.727C31.5458 41.943 31.4018 42.063 31.2098 42.063H18.6818Z"
+                        fill="white" />
+                    <path
+                        d="M129.874 29.5823C129.874 20.3593 120.613 12.8379 109.244 12.8379C97.8744 12.8379 88.6128 20.34 88.6128 29.5823C88.6128 37.8578 95.9602 44.7798 105.86 46.0946C106.537 46.2493 107.445 46.5393 107.677 47.1194C107.89 47.6414 107.813 48.4535 107.735 48.9949C107.735 48.9949 107.503 50.445 107.445 50.7544C107.349 51.2764 107.039 52.7846 109.224 51.8758C111.428 50.9477 121.096 44.8765 125.427 39.9073C128.443 36.601 129.874 33.2753 129.874 29.5823Z"
+                        fill="white" />
+                    <path
+                        d="M123.01 34.9186H117.209C116.997 34.9186 116.823 34.7446 116.823 34.5319V25.541C116.823 25.3283 116.997 25.1543 117.209 25.1543H123.01C123.223 25.1543 123.397 25.3283 123.397 25.541V27.0105C123.397 27.2232 123.223 27.3972 123.01 27.3972H119.066V28.9247H123.01C123.223 28.9247 123.397 29.0987 123.397 29.3114V30.7809C123.397 30.9935 123.223 31.1676 123.01 31.1676H119.066V32.6951H123.01C123.223 32.6951 123.397 32.8691 123.397 33.0818V34.5512C123.397 34.7446 123.223 34.9186 123.01 34.9186Z"
+                        fill="#06C755" />
+                    <path
+                        d="M101.567 34.9184C101.78 34.9184 101.954 34.7444 101.954 34.5317V33.0622C101.954 32.8495 101.78 32.6755 101.567 32.6755H97.6228V25.5215C97.6228 25.3088 97.4488 25.1348 97.2361 25.1348H95.7666C95.5539 25.1348 95.3799 25.3088 95.3799 25.5215V34.5124C95.3799 34.7251 95.5539 34.8991 95.7666 34.8991H101.567V34.9184Z"
+                        fill="#06C755" />
+                    <path
+                        d="M103.597 25.1152H105.067C105.28 25.1152 105.454 25.2893 105.454 25.5019V34.5122C105.454 34.7249 105.28 34.8989 105.067 34.8989H103.597C103.385 34.8989 103.211 34.7249 103.211 34.5122V25.5019C103.191 25.3086 103.365 25.1152 103.597 25.1152Z"
+                        fill="#06C755" />
+                    <path
+                        d="M115.005 25.1152H113.536C113.323 25.1152 113.149 25.2893 113.149 25.5019V30.8578L109.031 25.2893C109.031 25.2699 109.011 25.2699 108.992 25.2506L108.973 25.2313L108.953 25.2119C108.953 25.2119 108.953 25.2119 108.934 25.2119C108.934 25.2119 108.915 25.2119 108.915 25.1926C108.915 25.1926 108.915 25.1926 108.895 25.1926C108.895 25.1926 108.876 25.1926 108.876 25.1732C108.876 25.1732 108.876 25.1732 108.857 25.1732H108.837C108.837 25.1732 108.837 25.1732 108.818 25.1732H108.799C108.799 25.1732 108.799 25.1732 108.779 25.1732H108.76H108.741H108.721H108.702C108.702 25.1732 108.702 25.1732 108.683 25.1732H107.232C107.02 25.1732 106.846 25.3473 106.846 25.5599V34.5702C106.846 34.7829 107.02 34.9569 107.232 34.9569H108.702C108.915 34.9569 109.089 34.7829 109.089 34.5702V29.2143L113.207 34.7829C113.246 34.8215 113.265 34.8602 113.304 34.8796C113.304 34.8796 113.323 34.8796 113.323 34.8989C113.323 34.8989 113.323 34.8989 113.342 34.8989H113.362H113.381C113.381 34.8989 113.381 34.8989 113.4 34.8989H113.42C113.458 34.8989 113.478 34.9182 113.516 34.9182H114.967C115.179 34.9182 115.353 34.7442 115.353 34.5315V25.5213C115.411 25.3086 115.237 25.1346 115.005 25.1152Z"
+                        fill="#06C755" />
+                    <path
+                        d="M157.42 39.8373C157.276 39.8193 157.204 39.7293 157.168 39.5853L156.772 37.6773L156.754 37.5873C156.754 37.4613 156.862 37.3893 157.024 37.4253C158.284 37.6593 159.706 37.8393 161.056 37.8393C162.73 37.8393 164.296 37.5513 165.268 36.7413C165.844 36.2553 166.114 35.6793 166.114 35.1573C166.114 34.4733 165.646 33.8433 164.8 33.5733C164.35 33.4113 163.846 33.3393 163.324 33.3393C161.794 33.3393 160.03 34.0053 158.446 35.3193C158.356 35.4093 158.266 35.4453 158.14 35.4453L156.304 35.3553C156.142 35.3553 156.052 35.2653 156.07 35.1033C156.106 33.2133 156.322 30.5313 156.574 28.7133C156.592 28.5513 156.682 28.4793 156.844 28.4793L158.788 28.5333C158.968 28.5333 159.04 28.6413 159.004 28.8033C158.77 30.1353 158.59 31.6473 158.554 32.8173C160.3 31.6473 162.118 31.1973 163.684 31.1973C164.584 31.1973 165.394 31.3413 166.078 31.5933C167.842 32.2773 168.706 33.6453 168.706 35.0853C168.706 36.2913 168.112 37.5333 166.96 38.4873C165.502 39.7113 163.342 40.1613 161.056 40.1613C159.85 40.1613 158.608 40.0353 157.42 39.8373ZM158.14 25.3293C158.158 25.1673 158.266 25.1133 158.428 25.1133C160.75 25.1133 163.198 25.2933 165.124 25.9053C165.268 25.9413 165.322 26.0673 165.268 26.2113L164.656 28.1013C164.602 28.2453 164.476 28.2993 164.332 28.2453C162.28 27.5613 160.3 27.4173 157.996 27.3813C157.834 27.3813 157.744 27.2733 157.78 27.1113L158.14 25.3293Z"
+                        fill="white" />
+                    <path
+                        d="M141.04 39.8545C140.896 39.8365 140.806 39.7645 140.77 39.6205L140.266 37.5685V37.4785C140.266 37.3525 140.356 37.2805 140.536 37.3345C141.184 37.4965 141.76 37.5865 142.246 37.5865C143.29 37.5865 143.938 37.1725 144.28 36.2185C144.532 35.4985 144.622 34.3285 144.622 33.3025C144.622 32.8885 144.604 32.4925 144.586 32.1685C144.478 30.9985 144.226 30.7105 143.29 30.6745H142.57C142.3 30.6745 142.012 30.6745 141.706 30.6745C140.896 33.7165 139.78 36.9385 138.34 39.8545C138.268 39.9985 138.16 40.0345 138.016 39.9985L136.108 39.4045C135.928 39.3505 135.892 39.2245 135.964 39.0625C137.476 36.0385 138.502 33.3025 139.204 30.7645C138.268 30.8185 137.242 30.8905 136.252 30.9805H136.216C136.072 30.9805 135.982 30.9085 135.982 30.7465L135.874 28.8205C135.874 28.6765 135.964 28.5865 136.108 28.5865C137.224 28.5325 138.52 28.4965 139.798 28.4785C140.05 27.3085 140.266 26.1745 140.428 25.0585C140.464 24.8965 140.554 24.8245 140.716 24.8425L142.624 25.0225C142.804 25.0405 142.876 25.1305 142.858 25.2565C142.696 26.2645 142.498 27.3265 142.246 28.4425C142.912 28.4425 143.506 28.4425 143.956 28.4605C146.044 28.5505 146.764 29.5405 146.962 31.5745C146.998 32.0245 147.016 32.5645 147.016 33.1225C147.016 34.5625 146.89 36.1645 146.638 37.0105C146.008 39.0805 144.712 39.9985 142.606 39.9985C142.12 39.9985 141.598 39.9445 141.04 39.8545ZM146.836 28.0825C146.8 28.0285 146.764 27.9745 146.764 27.9205C146.764 27.8485 146.818 27.7765 146.926 27.7405L148.654 27.1285C148.69 27.1105 148.726 27.1105 148.762 27.1105C148.852 27.1105 148.924 27.1465 148.996 27.2365C150.472 29.2705 151.354 31.2505 151.696 33.3385C151.714 33.3565 151.714 33.3745 151.714 33.3925C151.714 33.5185 151.642 33.5905 151.534 33.6445L149.662 34.3465C149.626 34.3645 149.59 34.3825 149.554 34.3825C149.446 34.3825 149.374 34.3105 149.356 34.1665C149.05 32.0065 148.24 29.9545 146.836 28.0825Z"
+                        fill="white" />
+                    <path
+                        d="M259.714 25.2774C260.694 23.5974 261.478 21.6934 262.066 20.0134C262.15 19.7894 262.318 19.6774 262.542 19.7054L265.286 20.1254C265.566 20.1534 265.678 20.3494 265.566 20.6014C264.922 22.1414 264.054 23.8774 263.242 25.1654C264.698 25.0814 266.098 24.9694 267.358 24.7734C267.022 23.9614 266.686 23.1774 266.294 22.4494C266.238 22.3654 266.238 22.2814 266.238 22.2254C266.238 22.0854 266.322 21.9734 266.518 21.9454L268.758 21.3574C268.814 21.3574 268.842 21.3294 268.898 21.3294C269.038 21.3294 269.178 21.4134 269.262 21.5814C270.354 23.3454 271.222 25.5854 271.81 27.6854C271.81 27.7414 271.838 27.7974 271.838 27.8534C271.838 27.9934 271.754 28.1054 271.558 28.1614L269.206 28.8894C269.15 28.9174 269.094 28.9174 269.038 28.9174C268.87 28.9174 268.758 28.8334 268.702 28.6374C268.59 28.2734 268.506 27.8534 268.338 27.3774C265.37 27.9094 261.87 28.2454 258.874 28.4414H258.818C258.594 28.4414 258.482 28.3014 258.454 28.0774L258.146 25.7254V25.6694C258.146 25.4454 258.286 25.3054 258.51 25.3054C258.902 25.3054 259.322 25.2774 259.714 25.2774ZM275.73 27.7414C275.73 28.3294 275.982 28.5254 276.626 28.5534C277.018 28.5814 277.382 28.5814 277.746 28.5814C278.11 28.5814 278.446 28.5814 278.782 28.5534C280.182 28.4414 280.434 28.0494 280.546 26.1734C280.574 25.8654 280.742 25.7534 281.022 25.8654L283.486 26.7614C283.71 26.8454 283.794 26.9854 283.766 27.2374C283.458 31.1014 282.226 31.6334 279.678 31.7454C279.09 31.7734 278.362 31.7734 277.606 31.7734C276.878 31.7734 276.15 31.7734 275.534 31.7454C273.042 31.6614 272.23 30.9894 272.23 28.5534V20.1814C272.23 19.9294 272.37 19.7894 272.622 19.7894H275.338C275.59 19.7894 275.73 19.9294 275.73 20.1814V22.8694C277.69 22.4214 279.51 21.7494 281.162 20.9094C281.246 20.8534 281.33 20.8534 281.386 20.8534C281.498 20.8534 281.61 20.9094 281.694 21.0214L283.066 22.9814C283.122 23.0654 283.15 23.1494 283.15 23.2334C283.15 23.3454 283.094 23.4574 282.926 23.5134C280.798 24.5774 278.026 25.4174 275.73 25.8654V27.7414ZM262.738 44.9614C262.738 45.2134 262.598 45.3534 262.346 45.3534H259.798C259.546 45.3534 259.406 45.2134 259.406 44.9614V29.9254C259.406 29.6734 259.546 29.5334 259.798 29.5334H270.242C270.494 29.5334 270.634 29.6734 270.634 29.9254V40.9854C270.634 44.0094 269.85 45.1294 265.818 45.1574C265.594 45.1574 265.454 45.0454 265.37 44.8214L264.558 42.5254C264.53 42.4694 264.53 42.4134 264.53 42.3854C264.53 42.1894 264.67 42.1054 264.922 42.1054C267.078 42.1614 267.442 41.7694 267.442 40.7334V40.0054H262.738V44.9614ZM267.442 33.7054V32.1374H262.738V33.7054H267.442ZM275.59 40.6214C275.59 41.2374 275.898 41.4334 276.458 41.4614C276.794 41.4894 277.186 41.4894 277.578 41.4894C278.138 41.4894 278.698 41.4894 279.174 41.4614C280.49 41.4054 280.798 41.0974 280.938 38.7174C280.966 38.4094 281.134 38.2694 281.414 38.3814L283.794 39.3894C284.018 39.4734 284.13 39.6414 284.102 39.8654C283.878 43.8414 282.982 44.5694 279.762 44.7094C279.118 44.7374 278.334 44.7654 277.578 44.7654C276.794 44.7654 276.038 44.7374 275.45 44.7094C273.406 44.6254 272.174 44.0934 272.174 41.7694V32.9494C272.174 32.6974 272.314 32.5574 272.566 32.5574H275.198C275.45 32.5574 275.59 32.6974 275.59 32.9494V35.4974C277.522 35.0214 279.622 34.2934 281.33 33.3134C281.414 33.2574 281.498 33.2574 281.554 33.2574C281.666 33.2574 281.778 33.3134 281.862 33.4254L283.374 35.4134C283.43 35.4974 283.458 35.5814 283.458 35.6654C283.458 35.7774 283.402 35.8894 283.262 35.9454C280.966 37.1214 278.306 37.8774 275.59 38.2694V40.6214ZM267.442 37.6534V36.0574H262.738V37.6534H267.442Z"
+                        fill="white" />
+                    <path
+                        d="M230.678 24.4915C230.426 24.4915 230.286 24.3515 230.286 24.0995V21.3275C230.286 21.0755 230.426 20.9355 230.678 20.9355H255.458C255.71 20.9355 255.85 21.0755 255.85 21.3275V24.0995C255.85 24.3515 255.71 24.4915 255.458 24.4915H252.434V40.3115C252.434 43.9515 251.258 45.2955 245.742 45.2955H244.902C244.678 45.2955 244.538 45.1835 244.454 44.9875L243.334 42.2435C243.306 42.1875 243.306 42.1315 243.306 42.0755C243.306 41.9075 243.446 41.7955 243.698 41.7955C244.174 41.8235 244.622 41.8235 245.014 41.8235C248.486 41.8235 248.766 41.1795 248.766 39.8355V24.4915H230.678ZM232.89 27.8795C232.89 27.6275 233.03 27.4875 233.282 27.4875H245.294C245.546 27.4875 245.686 27.6275 245.686 27.8795V38.7995C245.686 39.0515 245.546 39.1915 245.294 39.1915H233.282C233.03 39.1915 232.89 39.0515 232.89 38.7995V27.8795ZM242.186 35.9155V30.7635H236.362V35.9155H242.186Z"
+                        fill="white" />
+                    <path
+                        d="M210.35 44.9605C210.35 45.2125 210.21 45.3525 209.958 45.3525H207.466C207.214 45.3525 207.074 45.2125 207.074 44.9605V34.8805C205.674 34.9645 204.274 35.0205 203.042 35.0485C202.79 35.0485 202.678 34.9085 202.65 34.6565L202.426 32.3325V32.2765C202.426 32.0525 202.594 31.9125 202.818 31.9125H204.414C205.002 31.2685 205.562 30.5965 206.122 29.9245C205.058 28.7205 203.798 27.5445 202.594 26.5365C202.482 26.4525 202.426 26.3405 202.426 26.2285C202.426 26.1445 202.454 26.0885 202.482 26.0045L203.686 23.7085C203.77 23.5685 203.882 23.4845 203.994 23.4845C204.05 23.4845 204.134 23.5125 204.218 23.5965C204.358 23.7365 204.526 23.8485 204.666 23.9885C205.422 22.7845 206.206 21.2445 206.71 19.9005C206.794 19.6765 206.962 19.5925 207.214 19.6765L209.594 20.4885C209.846 20.5725 209.93 20.7405 209.818 20.9645C209.062 22.5885 207.97 24.6045 206.878 26.0885C207.27 26.5085 207.69 26.9005 208.082 27.3205C209.034 25.9765 209.902 24.6045 210.602 23.3165C210.686 23.1765 210.77 23.1205 210.91 23.1205C210.966 23.1205 211.05 23.1485 211.134 23.1765L213.318 24.3805C213.458 24.4645 213.542 24.5765 213.542 24.7165C213.542 24.7725 213.514 24.8565 213.458 24.9405C211.946 27.2925 209.818 29.9525 208.11 31.8285C209.342 31.7725 210.49 31.7165 211.442 31.6325C211.274 31.1565 211.134 30.7085 210.966 30.2885C210.938 30.2045 210.91 30.1485 210.91 30.0925C210.91 29.9525 211.022 29.8405 211.19 29.7845L212.73 29.3365C212.786 29.3365 212.842 29.3085 212.87 29.3085C213.038 29.3085 213.178 29.3925 213.234 29.5605C213.962 31.1565 214.578 33.0885 214.942 34.7965C214.942 34.8525 214.97 34.8805 214.97 34.9365C214.97 35.1045 214.858 35.2165 214.662 35.2725L212.814 35.7765C212.758 35.7765 212.73 35.8045 212.702 35.8045C212.506 35.8045 212.394 35.6645 212.366 35.4685L212.198 34.4605C211.638 34.5445 210.994 34.6005 210.35 34.6565V44.9605ZM218.106 26.1165C217.406 27.5165 216.538 28.9165 215.558 30.0645C215.474 30.1765 215.362 30.2045 215.278 30.2045C215.194 30.2045 215.082 30.1765 214.998 30.0925L212.926 28.4685C212.814 28.3845 212.786 28.3005 212.786 28.2165C212.786 28.1045 212.814 28.0205 212.898 27.9365C214.718 25.8365 215.978 22.9805 216.622 20.1245C216.678 19.8725 216.818 19.7605 217.07 19.7885L219.702 20.0965C219.954 20.1245 220.094 20.2925 220.038 20.5445C219.898 21.2445 219.646 22.0845 219.394 22.7845H226.618C226.87 22.7845 227.01 22.9245 227.01 23.1765C227.01 25.5005 227.066 28.1605 227.066 30.8485C227.066 33.5365 227.01 36.2525 226.814 38.7165C226.422 43.5325 224.49 45.4925 218.806 45.2685C218.582 45.2685 218.442 45.1285 218.358 44.9325L217.294 42.1045C217.266 42.0485 217.266 41.9925 217.266 41.9365C217.266 41.7405 217.406 41.6285 217.63 41.6565C218.022 41.6845 218.386 41.6845 218.722 41.6845C222.138 41.6845 223.006 40.7325 223.23 38.2965C223.454 36.0565 223.51 33.7885 223.51 31.5205C223.51 29.7005 223.482 27.9085 223.482 26.1165H218.106ZM218.61 37.2885C217.966 35.3005 216.902 33.2845 215.642 31.6045C215.586 31.5205 215.53 31.4365 215.53 31.3525C215.53 31.2405 215.614 31.1285 215.754 31.0725L218.078 29.9245C218.162 29.8685 218.246 29.8685 218.302 29.8685C218.414 29.8685 218.526 29.9245 218.61 30.0365C219.926 31.7445 221.074 33.8445 221.802 35.8325C221.83 35.8885 221.83 35.9445 221.83 36.0005C221.83 36.1405 221.746 36.2525 221.578 36.3365L219.114 37.5125C219.03 37.5405 218.974 37.5685 218.918 37.5685C218.778 37.5685 218.666 37.4565 218.61 37.2885ZM202.678 43.8405C202.426 43.7845 202.314 43.6165 202.398 43.3645C203.042 41.4045 203.462 38.8005 203.518 36.5325C203.518 36.2805 203.686 36.1405 203.938 36.1685L205.758 36.3925C206.01 36.4205 206.122 36.5605 206.122 36.7845C206.066 39.0245 205.786 41.8245 205.17 44.0365C205.114 44.2885 204.946 44.3725 204.694 44.3165L202.678 43.8405ZM212.03 43.1685C211.918 41.0965 211.61 38.9125 211.162 37.0365C211.162 36.9805 211.134 36.9525 211.134 36.9245C211.134 36.7285 211.274 36.6165 211.47 36.5605L213.122 36.2245C213.178 36.2245 213.206 36.1965 213.262 36.1965C213.43 36.1965 213.542 36.3085 213.598 36.5045C214.102 38.2965 214.578 40.7605 214.774 42.6925V42.7765C214.774 42.9725 214.662 43.0845 214.438 43.1405L212.45 43.5045C212.394 43.5045 212.366 43.5325 212.338 43.5045C212.142 43.5045 212.03 43.3925 212.03 43.1685Z"
+                        fill="white" />
+                    <path
+                        d="M175.098 32.8922C174.846 32.8922 174.706 32.7522 174.706 32.5002V29.9522C174.706 29.7002 174.846 29.5602 175.098 29.5602H185.85C184.002 28.5242 181.958 27.4882 180.418 26.7882C180.278 26.7322 180.194 26.6202 180.194 26.5082C180.194 26.3962 180.25 26.3122 180.334 26.2282L182.266 24.3802C182.378 24.2682 182.462 24.2402 182.574 24.2402C182.658 24.2402 182.714 24.2402 182.798 24.2962C184.282 25.0802 186.242 26.1722 188.062 27.2922C189.742 26.2842 191.338 25.0522 192.346 23.9322H177.618C177.366 23.9322 177.226 23.7922 177.226 23.5402V21.1322C177.226 20.8802 177.366 20.7402 177.618 20.7402H196.714C196.966 20.7402 197.106 20.8802 197.106 21.1322V23.6242C197.106 23.8202 197.078 23.9602 196.938 24.1002C195.342 25.9202 193.046 27.8522 190.974 29.1682C191.17 29.3082 191.366 29.4202 191.534 29.5602H199.15C199.402 29.5602 199.542 29.7002 199.542 29.9522V32.5002C199.542 32.6682 199.514 32.8082 199.43 33.0042C198.422 35.4402 196.77 37.9322 195.09 39.7242C195.006 39.8082 194.894 39.8642 194.782 39.8642C194.698 39.8642 194.614 39.8362 194.53 39.7802L192.066 38.0722C191.954 37.9882 191.898 37.9042 191.898 37.7922C191.898 37.7082 191.954 37.5962 192.066 37.5122C193.578 36.2242 194.81 34.4602 195.482 32.8922H189.238V40.8162C189.238 43.8682 188.146 45.2682 182.35 45.2682H181.314C181.09 45.2682 180.95 45.1562 180.866 44.9602L179.774 42.1882C179.746 42.1322 179.746 42.0762 179.746 42.0202C179.746 41.8522 179.886 41.7402 180.138 41.7682C180.782 41.7962 181.37 41.8242 181.874 41.8242C185.374 41.8242 185.626 41.1522 185.626 39.8922V32.8922H175.098Z"
+                        fill="white" />
+                    <path
+                        d="M311.001 26.1916C310.625 26.1916 310.322 26.4947 310.322 26.87C310.322 27.2454 310.625 27.5461 311.001 27.5461C315.763 27.5461 319.638 31.4162 319.638 36.1723C319.638 40.9283 315.763 44.7985 311.001 44.7985C306.239 44.7985 302.365 40.9283 302.365 36.1723C302.365 32.9456 304.15 30.0617 306.891 28.5836C306.681 28.9963 306.482 29.4649 306.333 29.9801C306.23 30.3391 306.435 30.7145 306.797 30.8194C306.86 30.8381 306.923 30.8474 306.986 30.8474C307.28 30.8474 307.551 30.6539 307.638 30.3578C308.102 28.7491 309.16 27.6464 309.169 27.6371C309.174 27.6324 309.176 27.6277 309.181 27.6231C309.19 27.6137 309.197 27.6044 309.204 27.5951C309.223 27.5741 309.239 27.5508 309.253 27.5275C309.26 27.5181 309.267 27.5065 309.272 27.4972C309.288 27.4692 309.302 27.4365 309.314 27.4062C309.316 27.4016 309.318 27.3946 309.321 27.3899C309.335 27.3526 309.342 27.3153 309.349 27.278C309.349 27.2664 309.351 27.2524 309.353 27.2407C309.356 27.2127 309.358 27.1848 309.358 27.1568C309.358 27.1451 309.358 27.1311 309.358 27.1195C309.356 27.0798 309.351 27.0402 309.339 27.0006C309.339 26.9982 309.339 26.9959 309.337 26.9936C309.33 26.9656 309.321 26.9353 309.309 26.9073C309.307 26.9003 309.302 26.8933 309.297 26.8863C309.293 26.8747 309.286 26.863 309.279 26.8514C309.265 26.8257 309.251 26.8024 309.234 26.7791C309.227 26.7698 309.22 26.7604 309.213 26.7511C309.19 26.7208 309.162 26.6905 309.134 26.6649C309.131 26.6625 309.127 26.6602 309.125 26.6555C309.099 26.6322 309.068 26.6136 309.04 26.5949C309.031 26.5879 309.022 26.5833 309.01 26.5786C308.984 26.5646 308.956 26.5506 308.928 26.5413C308.919 26.5366 308.91 26.5343 308.898 26.5296C308.861 26.518 308.823 26.5063 308.784 26.5017C308.779 26.5017 308.774 26.5017 308.772 26.5017C308.744 26.497 308.716 26.4947 308.686 26.4947C308.669 26.4947 307.159 26.476 305.672 25.667C305.343 25.4875 304.932 25.6087 304.752 25.9375C304.573 26.2662 304.694 26.6765 305.023 26.856C305.443 27.0845 305.861 27.2594 306.26 27.3946C303.081 29.1035 301.008 32.4467 301.008 36.1839C301.008 41.6884 305.49 46.1647 311.001 46.1647C316.512 46.1647 320.994 41.6884 320.994 36.1839C320.994 30.6795 316.51 26.2032 311.001 26.2032"
+                        fill="white" />
+                    <path
+                        d="M313.063 31.4375H308.936C308.8 31.4375 308.69 31.5471 308.69 31.6823V33.5637C308.69 33.6966 308.581 33.8085 308.445 33.8085H306.562C306.429 33.8085 306.319 33.9181 306.319 34.0533V38.1752C306.319 38.3105 306.429 38.42 306.562 38.42H308.445C308.578 38.42 308.69 38.5296 308.69 38.6648V40.5463C308.69 40.6815 308.8 40.7911 308.936 40.7911H313.063C313.196 40.7911 313.308 40.6815 313.308 40.5463V38.6648C313.308 38.5296 313.417 38.42 313.553 38.42H315.436C315.572 38.42 315.682 38.3105 315.682 38.1752V34.0533C315.682 33.9204 315.572 33.8085 315.436 33.8085H313.553C313.417 33.8085 313.308 33.699 313.308 33.5637V31.6823C313.308 31.5471 313.198 31.4375 313.063 31.4375Z"
+                        fill="white" />
+                    <path
+                        d="M316.064 24.2658C317.565 24.2658 318.784 23.0511 318.784 21.5497C318.784 20.0483 317.568 18.8359 316.064 18.8359C314.561 18.8359 313.345 20.0506 313.345 21.5497C313.345 23.0488 314.561 24.2658 316.064 24.2658Z"
+                        fill="white" />
+                    <path
+                        d="M324.28 26.5918C322.78 26.5918 321.561 27.8065 321.561 29.3079C321.561 30.8093 322.777 32.0216 324.28 32.0216C325.784 32.0216 327 30.807 327 29.3079C327 27.8088 325.784 26.5918 324.28 26.5918Z"
+                        fill="white" />
+                    <path
+                        d="M305.936 24.2658C307.437 24.2658 308.655 23.0511 308.655 21.5497C308.655 20.0483 307.439 18.8359 305.936 18.8359C304.432 18.8359 303.216 20.0506 303.216 21.5497C303.216 23.0488 304.432 24.2658 305.936 24.2658Z"
+                        fill="white" />
+                    <path
+                        d="M297.719 26.5918C296.218 26.5918 295 27.8065 295 29.3079C295 30.8093 296.216 32.0216 297.719 32.0216C299.223 32.0216 300.439 30.807 300.439 29.3079C300.439 27.8088 299.223 26.5918 297.719 26.5918Z"
+                        fill="white" />
+                </svg>
+            </a>
+        </div>
+    </aside>
+
+    <footer>
+        <a id="go_top" class="f_topBtn">
+            <div class="f_topBtn_img">
+                <img src="./img/f_topBtn.png" alt="">
+            </div>
+            TOP
+        </a>
+        <div class="f_wrapper">
+            <div class="f_logo_img">
+                <img src="./img/f_lg_logo.png" alt="">
+            </div>
+            <div class="f_detail">
+                <div class="f_add_tel">
+                    <h3 class="f_address">東京都港区芝公園2-2-11 グランデイ芝公園 1階</h3>
+                    <div class="f_number">
+                        <div class="f_tel_img">
+                            <img src="./img/f_tel.png" alt="">
+                        </div>
+                        <h3>03−1234−5678</h3>
+                    </div>
+                    <h4>24時間年中無休</h4>
+                </div>
+                <div class="f_nav">
+                    <div class="f_nav_col1">
+                        <a href="" class="f_nav_btn">
+                            <div class="f_about_img">
+                                <img src="./img/f_aboutus.png" alt="">
+                            </div>
+                            <div class="f_nav_text">
+                                <h4>当院について</h4>
+                                <h5>ABOUT US</h5>
+                            </div>
+                        </a>
+                        <a href="" class="f_nav_btn">
+                            <div class="f_guide_img">
+                                <img src="./img/f_guide.png" alt="">
+                            </div>
+                            <div class="f_nav_text">
+                                <h4>診療案内</h4>
+                                <h5>GUIDE</h5>
+                            </div>
+                        </a>
+                        <a href="" class="f_nav_btn">
+                            <div class="f_recruit_img">
+                                <img src="./img/f_recruit.png" alt="">
+                            </div>
+                            <div class="f_nav_text">
+                                <h4>採用情報</h4>
+                                <h5>RECRUIT</h5>
+                            </div>
+                        </a>
+                        <a href="" class="f_nav_btn">
+                            <div class="f_contact_img">
+                                <img src="./img/f_contact.png" alt="">
+                            </div>
+                            <div class="f_nav_text">
+                                <h4>お問い合わせ</h4>
+                                <h5>CONTACT</h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="f_nav_col2">
+                        <a href="" class="f_nav_btn">
+                            <div class="f_news_img">
+                                <img src="./img/f_news.png" alt="">
+                            </div>
+                            <div class="f_nav_text">
+                                <h4>お知らせ</h4>
+                                <h5>NEWS</h5>
+                            </div>
+                        </a>
+                        <a href="" class="f_nav_btn">
+                            <div class="f_cooperation_img">
+                                <img src="./img/f_cooperation.png" alt="">
+                            </div>
+                            <div class="f_nav_text">
+                                <h4>協力動物病院</h4>
+                                <h5>COOPERATION</h5>
+                            </div>
+                        </a>
+                        <a href="" class="f_nav_btn">
+                            <div class="f_dictionary_img">
+                                <img src="./img/f_dictionary.png" alt="">
+                            </div>
+                            <div class="f_nav_text">
+                                <h4>用語集</h4>
+                                <h5>DICTIONARY</h5>
+                            </div>
+                        </a>
+                        <a href="" class="f_nav_btn">
+                            <div class="f_column_img">
+                                <img src="./img/f_column.png" alt="">
+                            </div>
+                            <div class="f_nav_text">
+                                <h4>コラム</h4>
+                                <h5>COLUMN</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
