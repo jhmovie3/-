@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- mplus1p font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- notosansjp font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <!-- roboto font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="template_herosection">
+        <div class="template_herosection_container">
+            <div class="template_herosection_inner">
+                <div class="template_breadcrumb">
+                    <a href="#">トップページ</a>
+                    <h4>お問い合わせ</h4>
+                </div>
+
+                <div class="template_herosection_heading">
+                    <div class="template_herosection_pagename">
+                        <div class="template_herosection_logo">
+                            <img src="./img/template_herosection_logo.png" alt="">
+                        </div>
+                        <div>CONTACT</div>
+                    </div>
+                    <p>お問い合わせ</p>
+                </div>
+
+                <div class="template_herosection_img">
+                    <img src="./img/contact_herosection_lg.png" alt="">
+                    <img src="./img/contact_herosection_sm.png" alt="">
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <div class="template_container contact">
+        <div class="template_inner">
+            <form class="entryForm">
+
+                <div class="formInput">
+                    <p class="name">
+                        <label class="label1" for="companyORname">企業名・お名前</label>
+                        <input class="input1" type="text" id="lastcompanyORname" placeholder="山田 太郎" required>
+                    </p>
+                    <p class="englishName">
+                        <label class="label1" for="englishLastName">フリガナ</label>
+                        <input class="input1" type="text" id="englishName" placeholder="ヤマダ　タロウ" required>
+                    </p>
+                    <p class="email">
+                        <label for="email">メールアドレス(半角英数字)</label>
+                        <input class="wideWidth" type="email" id="email" v-model="user.email" placeholder="@example"
+                            required>
+                    </p>
+                    <p class="contact">
+                        <label for="contact">お問い合わせ内容</label>
+                        <textarea class="wideWidth" id="contact" placeholder="お問い合わせ内容を入力してください"
+                            rows="20"></textarea>
+                    </p>
+                    <div class="policy">
+                        個人情報をご入力いただく目的
+        
+                        <br>本ウェブサイトは、サービスに関するお問合せ・お見積もり、もしくはその内容の確認手段として個人情報の入力をお願いしております。つまり、お客様にご入力頂いた個人情報は、お客様に明示した収集目的の範囲内で利用いたします。個人情報をお客様の同意なくお客様に明示した収集目的以外で利用することはありません。
+                        <br>
+                        個人情報の保護・管理
+                        <br>
+                        <br>弊社はお客様にご入力頂いた個人情報について、適切かつ厳重な管理体制のもと、その保護に努めます。個人情報を第三者に開示、譲渡することはございません。但し下記に該当する場合はその限りではございません。
+                        <br>１．お客様の同意がある場合
+                        <br>２．業務委託会社に対して、お客様に明示した収集目的を実施すべく個人情報を開示する必要がある場合
+                        <br>３．法律の適用を受ける場合や法的強制力のある情報提供を求められた場合
+                        本ポリシーの内容は、必要に応じて改訂することがあります。
+                        ご利用の際には本ページの最新の内容をご確認ください。
+                    </div>
+                    <p class="agreement">
+                        <input id="agree" type="checkbox" required>
+                        <label for="agree"><span>個人情報保護方針</span><span>に同意する。</span></label>
+                    </p>
+                    <button class="t_news_table_content_button form" type="submit">
+                        <div class="t_news_table_content_button_text">
+                            <span>入力内容を確認する</span>
+                            <span>
+                                <svg viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <mask id="mask0_547_930" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                        x="0" y="0" width="16" height="17">
+                                        <rect y="0.740234" width="16" height="16" fill="#D9D9D9" />
+                                    </mask>
+                                    <g mask="url(#mask0_547_930)">
+                                        <path
+                                            d="M8.19441 7.05444C4.65565 7.07866 4.75972 9.68445 3.64391 10.612C2.52809 11.5395 2.30161 16.2944 7.47238 15.1092L9.02599 15.0985C14.2125 16.2132 13.9214 11.4618 12.7929 10.5495C11.6645 9.63712 11.7333 7.02997 8.19424 7.05411L8.19441 7.05444Z"
+                                            fill="white" />
+                                        <path
+                                            d="M4.08044 6.40043C4.47263 7.55095 4.04065 8.73942 3.11551 9.05462C2.19062 9.3699 1.12274 8.69276 0.730629 7.54199C0.338432 6.39147 0.867976 5.48895 1.79287 5.17367C2.71776 4.85839 3.68807 5.24958 4.08019 6.40035L4.08044 6.40043Z"
+                                            fill="white" />
+                                        <path
+                                            d="M7.71208 3.44187C8.14642 4.71635 7.6868 6.0259 6.68576 6.36716C5.68472 6.70841 4.52093 5.95192 4.08684 4.67752C3.6525 3.40304 4.22009 2.41018 5.22105 2.06917C6.22208 1.72792 7.27791 2.16772 7.71225 3.4422L7.71208 3.44187Z"
+                                            fill="white" />
+                                        <path
+                                            d="M12.2973 6.34544C11.921 7.50125 12.3691 8.68355 13.2982 8.98615C14.2275 9.28882 15.2857 8.59719 15.6623 7.4412C16.0386 6.28539 15.4971 5.39025 14.568 5.08766C13.6387 4.78498 12.6739 5.18945 12.2974 6.34519L12.2973 6.34544Z"
+                                            fill="white" />
+                                        <path
+                                            d="M8.6266 3.43589C8.20973 4.71603 8.68685 6.01938 9.69264 6.34673C10.6983 6.67433 11.8516 5.90212 12.2685 4.62199C12.6853 3.34186 12.1044 2.35679 11.0987 2.02919C10.093 1.70159 9.04347 2.15576 8.6266 3.43589Z"
+                                            fill="white" />
+                                    </g>
+                                </svg>
+                            </span>
+                        </div>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
